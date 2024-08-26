@@ -4,7 +4,7 @@ import time
 
 # Definindo a pasta que terá os seus arquivos excluídos
 pasta_alvo = r"C:\Users\Elias Victor\Desktop\logic bomb\exemplo"
-tempo_espera = 1  # segundos
+tempo_espera = 10  # segundos
 
 # Remove a pasta e todo o seu conteúdo
 def apagar_arquivos(pasta):
@@ -18,11 +18,12 @@ def bomba_logica():
     tempo_inicio = time.time()
     tempo_fim = tempo_inicio + tempo_espera
 
+    # Realizando a contagem regressiva
     while time.time() < tempo_fim:
         tempo_restante = int(tempo_fim - time.time())
         print(f"Faltam {tempo_restante} segundos")
         time.sleep(1)
-
+    
     print("Remvendo os arquivos...")
     if os.path.exists(pasta_alvo):
         apagar_arquivos(pasta_alvo)
