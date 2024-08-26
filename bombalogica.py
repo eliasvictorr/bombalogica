@@ -3,7 +3,7 @@ import shutil
 import time
 
 # Definindo a pasta que terá os seus arquivos excluídos
-pasta_alvo = r"C:\Users\Elias Victor\Desktop\logic bomb\exemplo"
+pasta_alvo = r"C:\Users\Elias Victor\Desktop\bomba logica\exemplo"
 tempo_espera = 10  # segundos
 
 # Remove a pasta e todo o seu conteúdo
